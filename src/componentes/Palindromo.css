@@ -1,0 +1,197 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.palindromo-container {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+  font-family: 'Fredoka', 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Título */
+.titulo-principal {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* Texto */
+.subtitulo {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  max-width: 600px;
+  margin: 10px auto;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Explicação */
+.texto-explicativo {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin: 15px auto 30px;
+  font-weight: 600;
+}
+
+/* Card */
+.card-palindromo {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Botões - Gerador e Verificar*/
+button {
+  width: 100%;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.btn-gerador {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+}
+
+.btn-gerador:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+}
+
+.btn-verificar {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+}
+
+.btn-verificar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 172, 254, 0.6);
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 3px solid #a78bfa;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease;
+  background: white;
+  color: #333;
+  font-family: 'Fredoka', sans-serif;
+}
+
+input:focus {
+  border-color: #f5576c;
+  box-shadow: 0 0 0 4px rgba(245, 87, 108, 0.1);
+  transform: scale(1.02);
+}
+
+input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Exibição do Resultado */
+.resultado {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  animation: slideIn 0.5s ease;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #333;
+}
+
+.emoji-feliz,
+.emoji-triste {
+  font-size: 3rem;
+  animation: bounce 0.6s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .titulo-principal {
+    font-size: 2.5rem;
+  }
+  
+  .subtitulo {
+    font-size: 0.9rem;
+  }
+  
+  .texto-explicativo {
+    font-size: 1rem;
+  }
+  
+  .card-palindromo {
+    padding: 25px;
+  }
+  
+  button {
+    font-size: 1rem;
+  }
+}

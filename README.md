@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# 🔤 Palindrome Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Vamos decobrir se é um palíndromo? 👀
+>
+> Tá. Mas o que é um palíndromo? 😳
+>
+> Um Palíndromo pode ser um número, palavra ou frase que mesmo quando lida ao contrário permanece igual!  com gerador aleatório, feedback visual e animações!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Sobre o Projeto
 
-## React Compiler
+> O **Palindrome Checker** é uma aplicação web interativa para verificar palíndromos.
+>
+> Você digite qualquer palavra, número ou frase e descubre se o resultado é o mesmo de trás para frente.
+>
+> Ou... Você pode deixar o gerador automático te surpreender com um palíndromo aleatório! 🎲
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔍 Verificação de palíndromos em tempo real
+- 🎲 Gerador de palíndromos aleatórios
+- 😊😢 Feedback visual com emoji animado
+- 🎨 Design com glassmorphism e gradientes
+- ⚡ Animações suaves de entrada e resultado
+- 📱 Totalmente responsivo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tecnologias
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
+- React + TypeScript
+- Vite
+- CSS puro com glassmorphism e animações
+
+---
+
+## 🌐 Deploy
+
+👉 **[nadiacaricatto.github.io/palindrome-checker](https://nadiacaricatto.github.io/palindrome-checker/)**
+
+---
+
+## 🚀 Como Rodar Localmente
+
+**Pré-requisitos:** Node.js 18+
+
+```bash
+# Clone o repositório
+git clone https://github.com/nadiacaricatto/palindrome-checker.git
+
+# Entre na pasta
+cd palindrome-checker
+
+# Instale as dependências
+npm install
+
+# Rode o projeto
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👩‍💻 Autora
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Desenvolvido com ☕ e ❣️ com  por **Nádia Caricatto**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nadiacaricatto/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nadiacaricatto)
+
+---
+
+*Projeto desenvolvido para praticar React, TypeScript e lógica de manipulação de strings.*
